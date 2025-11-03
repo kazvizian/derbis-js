@@ -46,7 +46,7 @@
     "access": "public"
   },
   "scripts": {
-    "build": "tsup",
+    "build": "tsdown",
     "clean": "rm -rf dist",
     "prepublishOnly": "bun run build",
     "smoke": "node scripts/smoke.ts",
@@ -57,10 +57,10 @@
     "@commitlint/config-conventional": "^19.8.1",
     "@commitlint/cli": "^19.8.1",
     "lefthook": "^1.13.6",
-    "tsup": "^7.3.0",
+    "tsdown": "^0.15.12",
     "typescript": "^5.9.3"
   },
-  "tsup": {
+  "tsdown": {
     "entry": [
       "src/index.ts"
     ],
